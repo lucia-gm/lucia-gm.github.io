@@ -8,6 +8,34 @@ body {
   align-items: center;
   background-color: #b1fafc;
   background-image: linear-gradient(to right, #b1fafc, rgba(177, 250, 252, 0.0));
+  padding: 0 100px;
   margin: 0;
 }
 
+.container {
+  max-width: 690px;
+  font: 18px/1.56 'Source Sans Pro', sans-serif;
+  color: #324445;
+}
+
+h1 {
+  font-size: 40px;
+	font-weight: bold;
+	line-height: 1.2;
+  letter-spacing: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.33;
+  margin: 5px 0 7px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  margin-bottom: 72px;
+}
