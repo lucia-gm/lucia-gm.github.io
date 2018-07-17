@@ -12,7 +12,8 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center #9de8eb;
+  background-color: #9de8eb;
+  background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center;
   background-size: cover;
   padding: 0 10rem;
   margin: 0;
