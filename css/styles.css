@@ -4,10 +4,12 @@ html, * {
 
 body {
   min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
-  background-color: #b1fafc;
-  background-image: linear-gradient(to right, #b1fafc, rgba(177, 250, 252, 0.0));
+  background: linear-gradient(to right, #b1fafc, rgba(177, 250, 252, 0.0)), url(../images/cover-photo.jpg) no-repeat right center #b1fafc;
+  background-size: cover;
+  overflow: hidden;
   padding: 0 100px;
   margin: 0;
 }
