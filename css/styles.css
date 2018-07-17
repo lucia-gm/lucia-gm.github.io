@@ -11,7 +11,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #b1fafc, rgba(177, 250, 252, 0.0)), url(../images/cover-photo.jpg) no-repeat right center #b1fafc;
+  background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center #9de8eb;
   background-size: cover;
   padding: 0 10rem;
   margin: 0;
@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 69rem;
   font: 1.8rem/1.56 'Source Sans Pro', sans-serif;
-  color: #324445;
+  color: #333333;
 }
 
 h1 {
