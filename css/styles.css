@@ -39,3 +39,12 @@ h3 {
 main {
   margin-bottom: 72px;
 }
+
+nav a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/oval.svg);
+  text-indent: -99999px;
+  margin-right: 24px;
+}
