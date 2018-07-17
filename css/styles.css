@@ -1,0 +1,13 @@
+html, * {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #b1fafc;
+  background-image: linear-gradient(to right, #b1fafc, rgba(177, 250, 252, 0.0));
+  margin: 0;
+}
+
