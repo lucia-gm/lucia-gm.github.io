@@ -2,6 +2,10 @@ html, * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   min-height: 100vh;
   height: 100%;
@@ -10,18 +14,18 @@ body {
   background: linear-gradient(to right, #b1fafc, rgba(177, 250, 252, 0.0)), url(../images/cover-photo.jpg) no-repeat right center #b1fafc;
   background-size: cover;
   overflow: hidden;
-  padding: 0 100px;
+  padding: 0 10rem;
   margin: 0;
 }
 
 .container {
-  max-width: 690px;
-  font: 18px/1.56 'Source Sans Pro', sans-serif;
+  max-width: 69rem;
+  font: 1.8rem/1.56 'Source Sans Pro', sans-serif;
   color: #324445;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
 	font-weight: bold;
 	line-height: 1.2;
   letter-spacing: 0;
@@ -31,22 +35,26 @@ h1 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 1.33;
-  margin: 5px 0 7px;
+  margin: 0.6rem 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-  margin-bottom: 72px;
+  margin-bottom: 10rem;
+}
+
+p:first-of-type {
+  margin: 2.5rem 0 0;
 }
 
 nav a {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   background-image: url(../images/oval.svg);
   text-indent: -99999px;
-  margin-right: 24px;
+  margin-right: 2rem;
 }
