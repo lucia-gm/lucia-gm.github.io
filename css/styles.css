@@ -1,3 +1,4 @@
+/* Global styles */
 html, * {
   box-sizing: border-box;
 }
@@ -23,6 +24,12 @@ body {
   color: #333333;
 }
 
+
+/* Main styles */
+main {
+  margin-bottom: 10rem;
+}
+
 h1 {
   font-size: 4rem;
 	font-weight: bold;
@@ -41,14 +48,12 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  margin-bottom: 10rem;
-}
-
 p:first-of-type {
   margin: 2.5rem 0 0;
 }
 
+
+/* Navigation styles */
 nav a {
   display: inline-block;
   width: 48px;
@@ -57,10 +62,26 @@ nav a {
   text-indent: -99999px;
   margin-right: 2rem;
 }
+
 nav :last-child {
   margin-right: 0;
 }
 
+nav .github {
+  background-image: url(../images/github-icon.svg);
+}
+
+nav .linkedin {
+  background-image: url(../images/linkedin-icon.svg);
+}
+
+nav .twitter {
+  background-image: url(../images/twitter-icon.svg);
+}
+
+nav .email {
+  background-image: url(../images/email-icon.svg);
+}
 
 /* Media Queries */
 @media screen and (max-width: 670px) {
