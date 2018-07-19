@@ -62,14 +62,14 @@ nav a {
   background-image: url(../images/oval.svg);
   text-indent: -99999px;
   margin-right: 2rem;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
 
 nav a:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
 }
 
 nav :last-child {
