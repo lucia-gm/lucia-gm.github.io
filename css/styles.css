@@ -62,8 +62,8 @@ nav a {
   background-image: url(../images/oval.svg);
   text-indent: -99999px;
   margin-right: 2rem;
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
 }
 
 nav a:hover {
