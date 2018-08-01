@@ -5,6 +5,7 @@ html, * {
 
 html {
   font-size: 62.5%;
+  background-color: #9de8eb;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  background-color: #9de8eb;
   background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center;
   background-size: cover;
   padding: 0 10rem;
@@ -121,5 +121,19 @@ nav .email {
 @media screen and (max-width: 350px) {
   nav a {
     margin-right: 1rem;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  html {
+    font-size: 53%;
+  }
+  
+  .container {
+    font-size: 1.2rem;
+  }
+
+  main {
+    margin: 2rem 0 5rem;
   }
 }
