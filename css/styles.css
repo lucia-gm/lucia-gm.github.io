@@ -9,26 +9,31 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center;
-  background-size: cover;
-  padding: 0 10rem;
+  font: 1.8rem/1.56 'Source Sans Pro', sans-serif;
+  color: #332954;
   margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  max-width: 69rem;
-  font: 1.8rem/1.56 'Source Sans Pro', sans-serif;
-  color: #333333;
+.cover {
+  min-height: 100vh;
+  background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.cover-content {
+  margin-left: 10rem;
 }
 
 
 /* Main styles */
 main {
-  margin-bottom: 10rem;
+  margin-bottom: 5.4rem;
+  max-width: 69rem;
 }
 
 h1 {
@@ -37,16 +42,12 @@ h1 {
 	line-height: 1.2;
   letter-spacing: 0;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h3 {
   font-size: 2.4rem;
   line-height: 1.33;
   margin: 0.6rem 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 p:first-of-type {
@@ -59,7 +60,7 @@ nav a {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-image: url(../images/oval.svg);
+  background: #332954;
   text-indent: -99999px;
   margin-right: 2rem;
   transition: transform .3s ease-in-out;
@@ -77,20 +78,25 @@ nav :last-child {
 }
 
 nav .github {
-  background-image: url(../images/github-icon.svg);
+  mask-image: url(../images/github-icon.svg);
+  -webkit-mask-image: url(../images/github-icon.svg);
 }
 
 nav .linkedin {
-  background-image: url(../images/linkedin-icon.svg);
+  mask-image: url(../images/linkedin-icon.svg);
+  -webkit-mask-image: url(../images/linkedin-icon.svg);
 }
 
 nav .twitter {
-  background-image: url(../images/twitter-icon.svg);
+  mask-image: url(../images/twitter-icon.svg);
+  -webkit-mask-image: url(../images/twitter-icon.svg);
 }
 
 nav .email {
-  background-image: url(../images/email-icon.svg);
+  mask-image: url(../images/email-icon.svg);
+  -webkit-mask-image: url(../images/email-icon.svg);
 }
+
 
 /* Media Queries */
 @media screen and (max-width: 670px) {
