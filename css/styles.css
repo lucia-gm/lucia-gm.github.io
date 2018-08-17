@@ -30,6 +30,11 @@ h3 {
   margin: 0.6rem 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 /* Cover styles */
 .cover {
@@ -203,7 +208,6 @@ footer .cover-divider {
 .footer-content p a {
   color: #9de8eb;
   font-weight: bold;
-  text-decoration: none;
 }
 
 .footer-content nav a {
