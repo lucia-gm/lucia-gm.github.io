@@ -73,8 +73,8 @@ nav a {
   background: #332954;
   text-indent: -99999px;
   margin-right: 2rem;
-  transition: transform .3s ease-in-out;
-  -webkit-transition: transform .3s ease-in-out;
+  transition: transform .15s ease-in-out;
+  -webkit-transition: transform .15s ease-in-out;
 }
 
 nav a:hover {
@@ -114,64 +114,62 @@ nav .email {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  background-color: #FFFFFF;
   position: relative;
-  margin: 0 auto 16rem;
+  margin: -10rem auto 16rem;
 }
 
-section .project {
+.project {
   width: 29.6rem;
   height: 30.8rem;;
   font-size: 1.7rem;
   line-height: 2.4rem;
+  background: #fff;
   box-shadow: 0px 7px 14px rgba(51, 41, 84, 0.1);
-  background-color: #fff;
   border-radius: 1.4rem;
   padding: 2.4rem;
   margin: 0 1.8rem;
 }
 
-section .project-cover {
-  display: block;
-  background: url(../images/neigborhood-map.png) top no-repeat;
-  background-size: 26.4rem 16.8rem;
-  border-radius: 0.8rem; 
-}
-
-section .project-image {
-  width: 24.8rem;
-  height: 11.2rem;
-  background-color: rgba(61, 49, 101, 0.75);
+.project-cover {
+  position: relative;
+  border-radius: .8rem;
   overflow: hidden;
-  border-radius: 0.8rem;
+  height: 11.2rem;
+  width: 24.8rem;
 }
 
-section .project p{
+.project-cover::after {
+  content: "";
+  background-color: rgba(61, 49, 101, 0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.project p{
   margin-top: 0;
 }
 
-section .project h4{
-  margin: 1rem 0 0;
+.project h4{
+  margin: 1.9rem 0 0.4rem;
 }
 
-section .project:first-child {
-  margin-top: -10rem;
-}
-
-section .project:nth-child(2) {
-  margin-top: -7.6rem;
-}
-
-section .project:nth-child(3) {
-  margin-top: -5.2rem;
-}
-
-section .project:nth-child(4) {
+.project:nth-child(2n) {
   margin-top: 2.4rem;
 }
 
-section .project:nth-child(5) {
+.project:nth-child(2n+1) {
   margin-top: 4.8rem;
+}
+
+.project:first-child {
+  margin-top: 0;
+}
+
+.project:last-child {
+  margin-top: 7.2rem;
 }
 
 
@@ -181,12 +179,13 @@ section .project:nth-child(5) {
     justify-content: center;
   }
 
-  section .project:nth-child(3),
-  section .project:nth-child(5) {
+  .project:nth-child(3),
+  .project:nth-child(5) {
     margin-top: 2.4rem;
   }
 
-  section .project:nth-child(4) {
+  .project:nth-child(4),
+  .project:nth-child(6) {
     margin-top: 4.8rem;
   }
 }
@@ -201,9 +200,9 @@ section .project:nth-child(5) {
   }
 }
 
-@media screen and (max-width: 562px) {
+@media screen and (max-width: 617px) {
   html {
-    font-size: 53%;
+    font-size: 55%;
   }
 
   h1 {
@@ -214,7 +213,7 @@ section .project:nth-child(5) {
     font-size: 2rem;
   }
 
-  section .project:nth-child(2) {
+  .project:nth-child(n) {
     margin-top: 2.4rem;
   }
 }
@@ -222,10 +221,6 @@ section .project:nth-child(5) {
 @media screen and (max-width: 350px) {
   nav a {
     margin-right: 1rem;
-  }
-
-  section .project:first-child {
-    margin-top: -2.4rem;
   }
 }
 
