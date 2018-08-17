@@ -5,7 +5,6 @@ html, * {
 
 html {
   font-size: 62.5%;
-  background-color: #9de8eb;
 }
 
 body {
@@ -17,18 +16,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Cover styles */
 .cover {
   min-height: 100vh;
+  background-color: #9de8eb;
   background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center;
   background-size: cover;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .cover-content {
-  margin-left: 10rem;
+  margin: -10% 10rem 0;
 }
 
+.cover-divider {
+  fill: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+}
 
 /* Main styles */
 main {
@@ -98,19 +108,100 @@ nav .email {
 }
 
 
+/* Project's section styles */
+.projects {
+  max-width: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+  position: relative;
+  margin: 0 auto 16rem;
+}
+
+section .project {
+  width: 29.6rem;
+  height: 30.8rem;;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  box-shadow: 0px 7px 14px rgba(51, 41, 84, 0.1);
+  background-color: #fff;
+  border-radius: 1.4rem;
+  padding: 2.4rem;
+  margin: 0 1.8rem;
+}
+
+section .project-cover {
+  display: block;
+  background: url(../images/neigborhood-map.png) top no-repeat;
+  background-size: 26.4rem 16.8rem;
+  border-radius: 0.8rem; 
+}
+
+section .project-image {
+  width: 24.8rem;
+  height: 11.2rem;
+  background-color: rgba(61, 49, 101, 0.75);
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+
+section .project p{
+  margin-top: 0;
+}
+
+section .project h4{
+  margin: 1rem 0 0;
+}
+
+section .project:first-child {
+  margin-top: -10rem;
+}
+
+section .project:nth-child(2) {
+  margin-top: -7.6rem;
+}
+
+section .project:nth-child(3) {
+  margin-top: -5.2rem;
+}
+
+section .project:nth-child(4) {
+  margin-top: 2.4rem;
+}
+
+section .project:nth-child(5) {
+  margin-top: 4.8rem;
+}
+
+
 /* Media Queries */
+@media screen and (max-width: 1000px) {
+  .projects {
+    justify-content: center;
+  }
+
+  section .project:nth-child(3),
+  section .project:nth-child(5) {
+    margin-top: 2.4rem;
+  }
+
+  section .project:nth-child(4) {
+    margin-top: 4.8rem;
+  }
+}
+
 @media screen and (max-width: 670px) {
   html {
     font-size: 58%;
   }
 
-  body {
-    padding: 4rem;
-    overflow-y: auto;
+  .cover-content {
+    margin: 0 5rem;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 562px) {
   html {
     font-size: 53%;
   }
@@ -122,11 +213,19 @@ nav .email {
   h3 {
     font-size: 2rem;
   }
+
+  section .project:nth-child(2) {
+    margin-top: 2.4rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
   nav a {
     margin-right: 1rem;
+  }
+
+  section .project:first-child {
+    margin-top: -2.4rem;
   }
 }
 
@@ -135,8 +234,9 @@ nav .email {
     font-size: 53%;
   }
   
-  .container {
+  .cover {
     font-size: 1.2rem;
+    margin-bottom: 7rem;
   }
 
   main {
