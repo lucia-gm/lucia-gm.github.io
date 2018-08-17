@@ -138,6 +138,10 @@ nav .email {
   width: 24.8rem;
 }
 
+.project-cover img {
+  height: 11.2rem;
+}
+
 .project-cover::after {
   content: "";
   background-color: rgba(61, 49, 101, 0.75);
