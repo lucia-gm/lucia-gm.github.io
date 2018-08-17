@@ -40,7 +40,6 @@ body {
   display: block;
 }
 
-/* Main styles */
 main {
   margin-bottom: 5.4rem;
   max-width: 69rem;
@@ -60,7 +59,7 @@ h3 {
   margin: 0.6rem 0;
 }
 
-p:first-of-type {
+main p:first-of-type {
   margin: 2.5rem 0 0;
 }
 
@@ -88,23 +87,23 @@ nav :last-child {
 }
 
 nav .github {
-  mask-image: url(../images/github-icon.svg);
-  -webkit-mask-image: url(../images/github-icon.svg);
+  mask-image: url(../images/icons/github-icon.svg);
+  -webkit-mask-image: url(../images/icons/github-icon.svg);
 }
 
 nav .linkedin {
-  mask-image: url(../images/linkedin-icon.svg);
-  -webkit-mask-image: url(../images/linkedin-icon.svg);
+  mask-image: url(../images/icons/linkedin-icon.svg);
+  -webkit-mask-image: url(../images/icons/linkedin-icon.svg);
 }
 
 nav .twitter {
-  mask-image: url(../images/twitter-icon.svg);
-  -webkit-mask-image: url(../images/twitter-icon.svg);
+  mask-image: url(../images/icons/twitter-icon.svg);
+  -webkit-mask-image: url(../images/icons/twitter-icon.svg);
 }
 
 nav .email {
-  mask-image: url(../images/email-icon.svg);
-  -webkit-mask-image: url(../images/email-icon.svg);
+  mask-image: url(../images/icons/email-icon.svg);
+  -webkit-mask-image: url(../images/icons/email-icon.svg);
 }
 
 
