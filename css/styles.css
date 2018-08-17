@@ -16,6 +16,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 4rem;
+	font-weight: bold;
+	line-height: 1.2;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.33;
+  margin: 0.6rem 0;
+}
+
+
 /* Cover styles */
 .cover {
   min-height: 100vh;
@@ -32,7 +47,6 @@ body {
 }
 
 .cover-divider {
-  fill: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -43,20 +57,6 @@ body {
 main {
   margin-bottom: 5.4rem;
   max-width: 69rem;
-}
-
-h1 {
-  font-size: 4rem;
-	font-weight: bold;
-	line-height: 1.2;
-  letter-spacing: 0;
-  margin: 0;
-}
-
-h3 {
-  font-size: 2.4rem;
-  line-height: 1.33;
-  margin: 0.6rem 0;
 }
 
 main p:first-of-type {
@@ -151,11 +151,11 @@ nav .email {
   right: 0;
 }
 
-.project p{
+.project p {
   margin-top: 0;
 }
 
-.project h4{
+.project h4 {
   margin: 1.9rem 0 0.4rem;
 }
 
@@ -173,6 +173,41 @@ nav .email {
 
 .project:last-child {
   margin-top: 7.2rem;
+}
+
+
+/* Footer styles */
+footer {
+  height: 33.2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #3d3165;
+}
+
+footer .cover-divider {
+  top: -32px;
+}
+
+.footer-content h3 {
+  margin: 0;
+}
+
+.footer-content p {
+  margin: 1.8rem 0 3.8rem;
+}
+
+.footer-content p a {
+  color: #9de8eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-content nav a {
+  background: #fff; 
 }
 
 
