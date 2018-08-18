@@ -3,7 +3,7 @@ My personal website. It features a small intro about myself and links to my GitH
 
 Check it [here](http://luciagm.net/).
 
-[![Preview](images/preview.png)](http://luciagm.net/)
+[![Preview](images/preview.jpg)](http://luciagm.net/)
 
 
 ## License
