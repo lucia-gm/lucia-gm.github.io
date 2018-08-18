@@ -215,18 +215,18 @@ nav .email {
 
 /* Footer styles */
 footer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   color: #fff;
   background-color: #3d3165;
-  padding: 7.2rem 0 10.4rem;
 }
 
-footer .cover-divider {
-  top: -32px;
+footer .footer-divider {
+  background: #fff;
+  width: 100%;
+}
+
+footer .footer-content {
+  padding: 6.4rem 0 10.4rem;
 }
 
 .footer-content h3 {
@@ -234,7 +234,7 @@ footer .cover-divider {
 }
 
 .footer-content p {
-  margin: 1.8rem 0 3.8rem;
+  margin: 1.4rem 0 3.6rem;
 }
 
 .footer-content p a {
