@@ -47,14 +47,37 @@ a {
   position: relative;
 }
 
-.cover-content {
-  margin: -10% 10rem 0;
+.cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #9de8eb;
+  opacity: 0;
   animation: coverAnimation 1.2s;
 }
 
 @keyframes coverAnimation {
   from {
-    opacity: -1;
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+.cover-content {
+  margin: -10% 10rem 0;
+  z-index: 1;
+  animation: coverContentAnimation 1.2s;
+}
+
+@keyframes coverContentAnimation {
+  from {
+    opacity: 0;
   }
 }
 
@@ -64,6 +87,7 @@ a {
   right: 0;
   width: 100%;
   display: block;
+  z-index: 1;
 }
 
 main {
@@ -125,6 +149,7 @@ nav .email {
   justify-content: flex-start;
   position: relative;
   margin: -10rem auto 16rem;
+  z-index: 1;
   animation: projectsAnimation .9s ease-in-out;
 }
 
