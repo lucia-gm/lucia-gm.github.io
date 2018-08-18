@@ -39,8 +39,8 @@ a {
 /* Cover styles */
 .cover {
   min-height: 100vh;
-  background-color: #9de8eb;
   background: linear-gradient(to right, #9de8eb, rgba(157, 232, 235, 0.0)), url(../images/cover-photo.jpg) no-repeat right center;
+  background-color: #9de8eb;  
   background-size: cover;
   display: flex;
   align-items: center;
