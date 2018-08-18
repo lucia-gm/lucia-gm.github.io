@@ -63,7 +63,7 @@ a {
   from {
     opacity: 1;
   }
-  
+
   to {
     opacity: 0;
   }
@@ -83,7 +83,7 @@ a {
 
 .cover-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -.1rem; /* pushes SVG so it renders properly on retina */
   right: 0;
   width: 100%;
   display: block;
@@ -167,6 +167,7 @@ nav .email {
   background: #fff;
   box-shadow: 0px 7px 14px rgba(51, 41, 84, .1);
   border-radius: 1.6rem;
+  display: block;
   padding: 2.4rem;
   margin: 0 1.8rem;
   transition: all .15s ease-in-out;
@@ -245,13 +246,16 @@ footer {
   background-color: #3d3165;
 }
 
-footer .footer-divider {
+.footer-divider {
   background: #fff;
   width: 100%;
+  display: block;
+  position: relative;
+  bottom: .05rem; /* pushes SVG so it renders properly on retina */
 }
 
-footer .footer-content {
-  padding: 6.4rem 0 10.4rem;
+.footer-content {
+  padding: 6.4rem .8rem 10.4rem;
 }
 
 .footer-content h3 {
@@ -277,7 +281,8 @@ footer .footer-content {
 
 
 /* Media Queries */
-@media screen and (max-width: 1000px) {
+/* Two columns */
+@media screen and (max-width: 995px) { 
   .projects {
     justify-content: center;
   }
@@ -293,41 +298,77 @@ footer .footer-content {
   }
 }
 
-@media screen and (max-width: 670px) {
-  html {
-    font-size: 58%;
-  }
-
+/* adjusting margins of main content in cover */
+@media screen and (max-width: 828px) {
   .cover-content {
-    margin: 0 5rem;
+    margin-top: 1.6rem;
+    margin-left: 6.4rem;
+    margin-right: 6.4rem;
+    margin-bottom: 13.6rem;
   }
 }
 
-@media screen and (max-width: 617px) {
+/* keeping 2 columns smaller */
+@media screen and (max-width: 670px) {
   html {
-    font-size: 55%;
+    font-size: 55.147%;
   }
 
+  .cover {
+    min-height: 88vh;
+  }
+
+  .projects {
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  
+  .cover-content {
+    margin: 1.6rem 2.8rem 12rem;
+  }
+  .project {
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+  }
+  
   h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .project:nth-child(n) {
-    margin-top: 2.4rem;
+  main {
+    margin-bottom: 3.2rem;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
   nav a {
     margin-right: 1rem;
   }
 }
 
-@media screen and (max-height: 420px) {
+
+
+
+
+/* @media screen and (max-width: 617px) {
+  html {
+    font-size: 55%;
+  }
+} */
+
+/* @media screen and (max-width: 350px) {
+  nav a {
+    margin-right: 1rem;
+  }
+} */
+
+/* @media screen and (max-height: 420px) {
   html {
     font-size: 53%;
   }
@@ -340,4 +381,4 @@ footer .footer-content {
   main {
     margin: 2rem 0 5rem;
   }
-}
+}*/
