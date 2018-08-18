@@ -49,6 +49,13 @@ a {
 
 .cover-content {
   margin: -10% 10rem 0;
+  animation: coverAnimation 1.2s;
+}
+
+@keyframes coverAnimation {
+  from {
+    opacity: -1;
+  }
 }
 
 .cover-divider {
@@ -83,8 +90,6 @@ nav a {
 
 nav a:hover {
   transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
 }
 
 nav :last-child {
@@ -120,6 +125,13 @@ nav .email {
   justify-content: flex-start;
   position: relative;
   margin: -10rem auto 16rem;
+  animation: projectsAnimation .9s ease-in-out;
+}
+
+@keyframes projectsAnimation {
+  from {
+    margin-top: 0rem;
+  }
 }
 
 .project {
