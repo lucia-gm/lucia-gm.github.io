@@ -161,7 +161,7 @@ nav .email {
 
 .project {
   width: 29.6rem;
-  height: 30.8rem;;
+  height: 33.6rem;;
   font-size: 1.7rem;
   line-height: 2.4rem;
   background: #fff;
@@ -179,39 +179,16 @@ nav .email {
   box-shadow: 0px 7px 14px rgba(51, 41, 84, .25);
 }
 
-.project:hover .project-cover::after {
-  opacity: 0;
-}
-
-.project:hover img {
-  opacity: 1;
-}
-
 .project-cover {
   position: relative;
   border-radius: .8rem;
   overflow: hidden;
-  height: 11.2rem;
+  height: 13.6rem;
   width: 24.8rem;
 }
 
 .project-cover img {
-  height: 11.2rem;
-  opacity: 0.6;
-  transition: all .15s ease-in-out;
-  -webkit-transition: all .15s ease-in-out;
-}
-
-.project-cover::after {
-  content: "";
-  background-color: rgba(61, 49, 101, 0.75);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: all .15s ease-in-out;
-  -webkit-transition: all .15s ease-in-out;
+  height: 100%;
 }
 
 .project p {
@@ -351,34 +328,3 @@ footer {
     margin-right: 1rem;
   }
 }
-
-
-
-
-
-/* @media screen and (max-width: 617px) {
-  html {
-    font-size: 55%;
-  }
-} */
-
-/* @media screen and (max-width: 350px) {
-  nav a {
-    margin-right: 1rem;
-  }
-} */
-
-/* @media screen and (max-height: 420px) {
-  html {
-    font-size: 53%;
-  }
-  
-  .cover {
-    font-size: 1.2rem;
-    margin-bottom: 7rem;
-  }
-
-  main {
-    margin: 2rem 0 5rem;
-  }
-}*/
