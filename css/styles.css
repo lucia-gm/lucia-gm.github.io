@@ -199,19 +199,24 @@ nav .email {
   margin: 1.9rem 0 0.4rem;
 }
 
-.project:nth-child(2n) {
-  margin-top: 2.4rem;
-}
-
-.project:nth-child(2n+1) {
-  margin-top: 4.8rem;
-}
-
 .project:first-child {
   margin-top: 0;
 }
 
-.project:last-child {
+.project:nth-child(2),
+.project:nth-child(4),
+.project:nth-child(7) {
+  margin-top: 2.4rem;
+}
+
+.project:nth-child(3),
+.project:nth-child(5),
+.project:nth-child(8) {
+  margin-top: 4.8rem;
+}
+
+.project:nth-child(6),
+.project:nth-child(9) {
   margin-top: 7.2rem;
 }
 
@@ -305,9 +310,14 @@ footer {
   .cover-content {
     margin: 1.6rem 2.8rem 12rem;
   }
+
   .project {
     margin-top: 0;
     margin-bottom: 2.4rem;
+  }
+
+  .project:nth-child(2n) {
+    margin-top: 2.4rem;
   }
   
   h1 {
