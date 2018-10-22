@@ -316,7 +316,7 @@ footer {
     margin-bottom: 2.4rem;
   }
 
-  .project:nth-child(2n) {
+  .project:nth-child(n) {
     margin-top: 2.4rem;
   }
   
