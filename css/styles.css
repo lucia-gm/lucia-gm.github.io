@@ -74,6 +74,9 @@ a {
   z-index: 1;
   animation: coverContentAnimation 1.2s;
 }
+.cover-content a {
+  text-decoration: underline;
+}
 
 @keyframes coverContentAnimation {
   from {
